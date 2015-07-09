@@ -24,15 +24,15 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/uploadAV', {
         templateUrl: 'views/uploadAV.html',
         controller: 'AVCtrl',
         controllerAs: 'AVCtrl'
+      })
+      .when('/dash', {
+        templateUrl: 'views/dash-player.html',
+        controller: 'DASHCtrl',
+        controllerAs: 'dash'
       })
       .otherwise({
         redirectTo: '/'
