@@ -16,6 +16,21 @@
     <link rel="stylesheet" href="lib/angular.treeview/css/angular.treeview.css">
     <!-- endbuild -->
 
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+
     <!-- https://github.com/creynders/dijon-framework -->
     <script src="dash-src/lib/dijon.js"></script>
 
@@ -185,6 +200,14 @@
     <script src="dash-src/dash/DashAdapter.js"></script>
 
 
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/metrics.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/AVCtrl.js"></script>
+    <script src="scripts/controllers/dash.js"></script>
+    <!-- endbuild -->
+
   </head>
   <body ng-app="dashWebclientApp">
     <!--[if lte IE 8]>
@@ -224,25 +247,6 @@
 
 
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/AVCtrl.js"></script>
-        <!-- endbuild -->
 </body>
 </html>

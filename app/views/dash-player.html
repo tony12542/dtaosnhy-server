@@ -317,35 +317,6 @@
             <li class="list-group-item">Use the most up-to-date version of your browser for the best compatibility.</li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <h3 class="footer-text">Player Libraries:</h3>
-          <a
-            ng-repeat="item in playerLibraries"
-            class="footer-text"
-            href="{{item.link}}"
-            target="_blank">
-            {{item.name}}
-          </a>
-          <h3 class="footer-text">Showcase Libraries:</h3>
-          <a
-            ng-repeat="item in showcaseLibraries"
-            class="footer-text"
-            href="{{item.link}}"
-            target="_blank">
-            {{item.name}}
-          </a>
-        </div>
-        <div class="col-md-4">
-          <h3 class="footer-text">Contributors:</h3>
-          <a
-            ng-repeat="item in contributors"
-            class="footer-text"
-            href="{{item.link}}"
-            target="_blank">
-            <img ng-show="hasLogo(item)" ng-src="{{item.logo}}" alt="{{item.link}}"/>
-            <span class="contributor" ng-show="!hasLogo(item)">{{item.name}}</span>
-          </a>
-        </div>
       </div>
     </div>
   </div>

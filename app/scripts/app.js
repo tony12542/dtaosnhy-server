@@ -8,8 +8,9 @@
  *
  * Main module of the application.
  */
-angular
-  .module('dashWebclientApp', [
+
+
+angular.module('dashWebclientApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -38,3 +39,4 @@ angular
         redirectTo: '/'
       });
   });
+
